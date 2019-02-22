@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
 import React from 'react';
@@ -9,7 +10,9 @@ import Firebase, { FirebaseContext } from './components/Firebase';
 
 ReactDOM.render(
   <FirebaseContext.Provider value={new Firebase()}>
-    <App />
+    <div className="container">
+      <App />
+    </div>
   </FirebaseContext.Provider>,
   document.getElementById('root')
 );
